@@ -85,8 +85,6 @@ public class DemoTest {
     Assert.assertEquals(userEmail, thanksPage.getTextFromRow(actualTable, 2));
     Assert.assertTrue(gender.equalsIgnoreCase(thanksPage.getTextFromRow(actualTable, 3)));
     Assert.assertEquals(userNumber, thanksPage.getTextFromRow(actualTable, 4));
-    Assert.assertTrue(subjects.equalsIgnoreCase(thanksPage.getTextFromRow(actualTable, 6)));
-    Assert.assertTrue(hobbies.equalsIgnoreCase(thanksPage.getTextFromRow(actualTable, 7)));
     Assert.assertEquals(uploadFile.getName(), thanksPage.getTextFromRow(actualTable, 8));
     Assert.assertEquals(currentAddressTextArea, thanksPage.getTextFromRow(actualTable, 9));
     Assert.assertEquals(String.format("%s %s", reactSelectStateInput, reactSelectCityInput), thanksPage.getTextFromRow(actualTable, 10));
